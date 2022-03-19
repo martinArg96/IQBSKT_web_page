@@ -34,9 +34,7 @@ li{
     color: rgb(198, 198, 240);
 }
 
-header{
 
-}
 
 button{
     font-size: 1.1em;
@@ -237,19 +235,23 @@ header a:hover{
 
 #caracteristicas .container{
     text-align: center;
-    background: linear-gradient(217deg, rgba(230, 166, 166, 0.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(160, 190, 160, 0.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(189, 189, 197, 0.8), rgba(0,0,255,0) 70.71%);
-    ;
+    background: linear-gradient(217deg, rgba(8, 80, 64, 0.8), rgb(27, 182, 138) );
+   padding-top: 30PX;
+   padding-bottom:30PX;
 
 }
 
 #caracteristicas li{
     margin: 12px 0px ;
     font-weight: bold;
+    color: rgb(26, 16, 4);
+    font-size: 1.6em;
    
 }
 
+#caracteristicas ul{
+    margin: 0;
+}
 #contacto{
     display: flex;
     flex-direction: column;
@@ -267,6 +269,7 @@ header a:hover{
 #contacto button{
     font-size: 8vw;
     margin: 30px;
+ 
 
 }
 
