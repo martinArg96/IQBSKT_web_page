@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;    
+    background-color: #085042;
 }
+
 
 h1{
     font-size: 3.5em;
@@ -25,20 +30,30 @@ ul{
 li{
     font-size: 1.25em;
 }
+.color-acento{
+    color: rgb(198, 198, 240);
+}
+
+
+
 button{
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
     padding: 10px 30px;
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.3);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    background-color: rgb(27, 27, 143);
+    background-color: rgba(8,80,66,1);
     color: white;
 }
 
 button:hover{
-    background-color: rgb(44, 3, 228);
-    color: orange;
+    background-color: white;
+    color: rgba(8,80,66,1);
+    transition: 0.5s ;
+
+  
+    
 }
 
 .container{
@@ -47,16 +62,20 @@ button:hover{
 }
 
 header{
-    background-color: rgb(235,235,234);
-
+    background: linear-gradient(rgba(8,60,50,1)60%, rgba(8,80,66,0.8));
 }
 
 header .logo{
     margin: 0;
     padding: 20px 30px 20px 20px;
-    font-weight: bold;
-    color: rgb(37, 19, 201);
-    font-size: 1.6em;
+    
+    
+}
+
+header img{
+    height: 120px;
+    width: 120px;
+    
 }
 
 header .container{
@@ -64,16 +83,277 @@ header .container{
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
+ 
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 header a{
     padding: 5px 12px;
+    margin: 8px;
+    
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: #085042;
+    display: inline;
+    /*border: 2px solid whitesmoke;*/
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 1px rgb(5, 49, 40);
+    width: 50vw;
+    text-align: center;
+    
+ 
 }
 
 header a:hover{
-    color: blueviolet;
+    color: rgb(226, 43, 43);
 }
 
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image:   
+    linear-gradient(
+        0deg,
+        rgb(114, 48, 48,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/portadaginobiliacru2.jpg");
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform:uppercase;
+    
+}
+
+#hero h1{
+    color: rgb(222, 240, 236);
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bolder;
+    font-style:italic ;
+    
+}
+
+#hero button{
+    font-size: 2em;
+}
+
+#somos-iq{
+    background-color: #085042;
+}
+
+
+#somos-iq h2,p{
+    margin: 0;
+}
+
+#somos-iq .container{
+ 
+    background-color: #085042;
+    padding: 30px;
+    
+
+}
+
+#nuestros-programas{
+    background-color: rgb(40, 40, 40);
+    color: rgb(203, 216, 216);
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 100px 20px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:   
+    linear-gradient(
+        0deg,
+        rgb(114, 48, 48,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/portadaiversonvskyrie.jpg");
+   
+
+
+}
+
+.carta:nth-child(2){
+    background-image:   
+    linear-gradient(
+        0deg,
+        rgba(54, 122, 48, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/portadaginobiliacru2.jpg");
+
+
+}
+
+.carta:nth-child(3){
+    background-image:   
+    linear-gradient(
+        0deg,
+        rgba(202, 62, 132, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../images/postertime.jpg");
+ 
+
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    background: linear-gradient(217deg, rgba(8, 80, 64, 0.8), rgb(27, 182, 138) );
+   padding-top: 30PX;
+   padding-bottom:30PX;
+
+}
+
+#caracteristicas li{
+    margin: 12px 0px ;
+    font-weight: bold;
+    color: rgb(26, 16, 4);
+    font-size: 1.6em;
+   
+}
+
+#caracteristicas ul{
+    margin: 0;
+}
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(40, 40, 40);
+    color: antiquewhite;
+    height: 70vh;
+}
+
+#final h2{
+    font-size: 10vw;
+}
+
+#contacto button{
+    font-size: 8vw;
+    margin: 30px;
+ 
+
+}
+
+footer{
+    background-color: blanchedalmond;
+}
+
+footer p{
+    margin: 0;
+    color:rgba(189, 189, 197, 0.8);
+    padding: 15px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #085042;;
+
+}
+
+@media (min-width:888px ){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 50px;
+        margin-left: 100px;
+      
+        max-width: none;
+        padding-right: 20px;
+        padding-bottom: 0;
+        
+    }
+
+    nav{
+        flex-direction: row;
+       
+
+
+    }
+
+    header a{
+      width: 200px;
+      font-size: small;
+    }
+
+    #somos-iq .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-iq .texto{
+        width: 50%;
+        margin: 20px ;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #somos-iq h2{
+        text-align: initial;
+    }
+
+    #somos-iq .img-container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(09,53,43,0.2),
+            rgba(23,89,45,0.3)
+        ),url("../images/postertime.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    }
+
+    
+}
