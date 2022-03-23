@@ -22,7 +22,7 @@ h3{
     font-size: 2em;
 }
 p{
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 ul{
     list-style: none;
@@ -63,11 +63,13 @@ button:hover{
 
 header{
     background: linear-gradient(rgba(8,60,50,1)60%, rgba(8,80,66,0.8));
+    margin: ;
 }
 
 header .logo{
     margin: 0;
-    padding: 20px 30px 20px 20px;
+    padding:
+    
     
     
 }
@@ -83,7 +85,8 @@ header .container{
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
- 
+    justify-content: center;
+    margin: 0;
 }
 
 nav{
@@ -174,12 +177,12 @@ header a:hover{
 }
 
 #nuestros-programas .container{
-    padding: 100px 20px;
+    padding: 50px 5px;
 }
 
 #nuestros-programas h2{
     margin-top: 0;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 #nuestros-programas p{
@@ -190,9 +193,10 @@ header a:hover{
 #nuestros-programas .carta{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
+    padding: 5px;
     margin: 20px;
     border-radius: 15px;
+    
 }
 
 .carta:first-child{
@@ -267,8 +271,8 @@ header a:hover{
 }
 
 #contacto button{
-    font-size: 8vw;
-    margin: 30px;
+    font-size: 5vw;
+    margin: 100px;
  
 
 }
@@ -302,8 +306,8 @@ footer .container{
     header .container{
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 50px;
-        margin-left: 100px;
+        margin-right: 250px;
+        margin-left: 20px;
       
         max-width: none;
         padding-right: 20px;
@@ -355,5 +359,59 @@ footer .container{
         width: 500px;
     }
 
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
     
+    #nuestros-programas p{  
+        display: block;
+    }
+
+    #nuestros-programas .carta{
+        padding: 20px;
+    }
+
+
+    #caracteristicas{
+        background-image: url("../images/portadaginobiliacru2.jpg");
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+
+    }
+
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+
+
+    #contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #contacto h2{
+        font-size: 3em;
+    }
+
+    #contacto button{
+        font-size: 2em;
+        width: 40vw;
+        max-width: 500px;
+      
+        
+
+    }
+
+ 
 }
