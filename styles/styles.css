@@ -62,17 +62,16 @@ button:hover{
 }
 
 header{
-    background: linear-gradient(rgba(8,60,50,1)60%, rgba(8,80,66,0.8));
-    margin: ;
+    background: linear-gradient(rgba(8,60,50,1),60%, rgba(8,80,66,0.8)); 
 }
+
+
 
 header .logo{
     margin: 0;
-    padding:
-    
-    
-    
+    margin: 0;
 }
+    
 
 header img{
     height: 120px;
